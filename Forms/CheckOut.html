@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign Up</title>
+    <title>Checkout</title>
     <link rel="stylesheet" href="../style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -44,13 +44,13 @@
                 <div class="user-details">
 
                     <div class="signup">
-                        <h2 style="text-align: center; font-size: 30px;"><span style="color: #707070;">Sign</span>
-                            <span style="color: #E55473;">UP</span>
+                        <h2 style="text-align: center; font-size: 30px;"><span
+                                style="color: #707070;">Billing</span><span style="color: #E55473;">Details</span>
                         </h2>
                     </div>
 
                     <form action="">
-                        <label class="signup-label" for="Name">Name</label>
+                        <label class="signup-label" for="Name">Full Name</label>
                         <div class="input-box">
                             <input class="user-input" type="text" name="name" id="Name" placeholder="Enter your name"
                                 required>
@@ -68,45 +68,70 @@
                                 placeholder="Enter your phone number" required>
                         </div>
 
-                        <label class="signup-label" for="Date">Date of birth</label>
+                        <label class="signup-label" for="Address">Address</label>
                         <div class="input-box">
-                            <input class="user-input" type="date" name="date" id="Date"
-                                placeholder="Enter your Date of birth" required>
+                            <input class="user-input" type="text" name="address" id="Address"
+                                placeholder="Enter your address" required>
                         </div>
 
-                        <label class="signup-label" for="Crt-Password">Create Password</label>
+                        <label class="signup-label" for="delivery">Delivary Date</label>
                         <div class="input-box">
-                            <input class="user-input" type="text" name="crt-password" id="Crt-Password"
-                                placeholder="Create your password" required>
+                            <input class="user-input" type="date" name="delivery" id="delivery" required>
                         </div>
 
-                        <label class="signup-label" for="C-Password">Confirm Password</label>
-                        <div class="input-box">
-                            <input class="user-input" type="text" name="c-password" id="C-Password"
-                                placeholder="Confirm password" required>
+                    </form>
+
+                </div>
+            </div>
+
+
+            <!--Cash memo-->
+
+            <div class="container">
+                <div class="user-details">
+
+                    <div class="signup">
+                        <h2 style="text-align: center; font-size: 30px;"><span style="color: #707070;">Your</span><span
+                                style="color: #E55473;">Order</span>
+                        </h2>
+                    </div>
+
+                    <form action="">
+                        <div class="input-box order">
+                            <h3>PRODUCT</h3>
+                            <h3>SUBTOTAL</h3>
                         </div>
 
-                        <div class="gender-details">
 
-                            <fieldset class="fieldset">
-                                <legend class="signup-label">Gender</legend>
-                                <div class="gender">
-                                    <input type="radio" name="gender" id="male"> <label for="male">Male</label>
-                                </div>
+                        <div class="input-box order">
+                            <input class="order-input" type="email" name="email" id="Email"
+                                placeholder="Enter your email" required>
+                            <input class="order-input" type="email" name="email" id="Email"
+                                placeholder="Enter your email" required>
+                        </div>
 
-                                <div class="gender">
-                                    <input type="radio" name="gender" id="female"> <label for="female">Female</label>
-                                </div>
 
-                                <div class="gender">
-                                    <input type="radio" name="gender" id="other"> <label for="other">Others</label>
-                                </div>
-                            </fieldset>
+                        <div class="input-box order">
+                            <h4 class="total">Subtotal</h4>
+                            <input class="order-input" type="text" name="number" id="Number"
+                                placeholder="Enter your phone number" required>
+                        </div>
 
+
+                        <div class="input-box order">
+                            <h4 class="total">Shipping</h4>
+                            <input class="order-input" type="text" name="address" id="Address"
+                                placeholder="Enter your address" required>
+                        </div>
+
+
+                        <div class="input-box order">
+                            <h2>TOTAL</h2>
+                            <input class="order-input" type="text" name="delivery" id="delivery" required>
                         </div>
 
                         <div class="btn-signup">
-                            <input class="submit" type="submit" value="Sign Up">
+                            <input class="submit" type="submit" value="Place Order">
                         </div>
 
                     </form>
